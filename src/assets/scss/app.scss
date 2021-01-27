@@ -14,12 +14,15 @@ body {
     margin: 0 auto;
 }
 
+a,p{
+    font-size: 16px;
+}
+
 .ctaButton{
     @apply text-white;
     @apply py-8;
     @apply px-16;
     border-radius: 1.5rem;
-    @apply text-xl;
     @apply font-semibold;
     transition: 300ms;
     background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(114, 81, 235), rgb(212, 61, 150)) repeat scroll 0% 0%;
@@ -28,7 +31,6 @@ body {
         transform: scale(1.05,1.05);
     }
 }
-
 
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
