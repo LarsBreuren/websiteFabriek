@@ -1,0 +1,20 @@
+.wrapper{
+    border-radius: 1.5rem;
+}
+.vertical-pill{
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    height: 500px;
+    background-image: url('https://source.unsplash.com/random');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    bottom: -10vh;
+    max-width: 270px;
+}
+div .darth {
+    background-image: url('https://wallpaperaccess.com/full/885523.jpg');
+    top: -5vh;
+}
