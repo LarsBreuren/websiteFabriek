@@ -8,7 +8,7 @@
                 Effectief.<br>
                 Voordelig.
             </h1>
-           <div class="w-full text-center mt-16"> <p> Waarom zou je het anders willen? </p></div>
+           <div class="w-full text-center mt-16"> <p> Waarom zou je het anders willen?? </p></div>
         </div>
         <div class="w-1/3 flex justify-center ">
             <div class="w-2/3 bg-secondary-500 darth vertical-pill"></div>
