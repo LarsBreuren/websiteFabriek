@@ -27,6 +27,9 @@ module.exports = {
       // => @media (min-width: 1920px) { ... }
     },
     colors: {
+      main: '#7251EB',
+      secondary: '#3DB0D4',
+      third: '#D43D96',
       transparent: 'transparent',
       white: '#FFFFFF',
       bluetooth: '#3b5998',
