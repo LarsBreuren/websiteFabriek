@@ -37,11 +37,10 @@
             cursor-pointer
             w-full
           "
-            >mdi-face-agent</v-icon>
-            <h2>Hulp nodig? </h2>
-            <p>We zijn er voor je. <br>
-               Stuur gerust een mail en bel ons.
-               Dan gaan wij het regelen!
+            >mdi-draw</v-icon>
+            <h2>Op maat? </h2>
+            <p>Een website moet aansluiten op jouw wensen.
+              Daarom maken wij alle websites op maat.
             </p>
         </a>
     </div>

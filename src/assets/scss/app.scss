@@ -40,7 +40,7 @@ h1,h2{
   @align-left;
   transition: 300ms;
   &:hover{
-    box-shadow: -5px -5px 30px 5px rgb(114, 81, 235), 5px 5px 30px 5px rgb(212, 61, 150);
+    box-shadow: -3px -3px 20px 3px rgb(114, 81, 235), 3px 3px 20px 3px rgb(212, 61, 150);
     transform: scale(1.05,1.05);
   }
 }
