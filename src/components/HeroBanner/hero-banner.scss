@@ -1,32 +1,48 @@
 .wrapper{
     border-radius: 1.5rem;
 }
-.first{
+.pill1{
     display: none;
 }
 .vertical-pill{
-    border-top-left-radius: 200px;
-    border-top-right-radius: 200px;
-    border-bottom-left-radius: 200px;
-    border-bottom-right-radius: 200px;
-    height: 300px;
+    border-radius: 1.5rem;
     background-image: url('https://source.unsplash.com/random');
     background-size: cover;
     background-position: center;
     position: relative;
     bottom: -10vh;
-    max-width: 270px;
+    height: 300px;
+    width: 30vw;
+    display: none;
 }
-div .darth {
+ .pill2 {
     background-image: url('https://wallpaperaccess.com/full/885523.jpg');
-    top: -5vh;
+    top: 0;
 }
 
-@screen md {
-    .first{
+
+@screen sm{
+    .vertical-pill{
+      display: block;
+    }
+}
+@screen md{
+    .vertical-pill{
+    height: 500px;
+    width: 260px;
+    }
+}
+@screen lg {
+    .pill1{
        display: block;
     }
+    .pill2{
+        top: -5vh;
+    }
     .vertical-pill{
-        height: 500px;
+        border-top-left-radius: 200px;
+        border-top-right-radius: 200px;
+        border-bottom-left-radius: 200px;
+        border-bottom-right-radius: 200px;
     }
   }
