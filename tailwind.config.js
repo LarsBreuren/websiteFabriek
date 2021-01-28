@@ -32,7 +32,7 @@ module.exports = {
       third: '#D43D96',
       transparent: 'transparent',
       white: '#FFFFFF',
-      bluetooth: '#3b5998',
+      header: '#2c3e50',
       primary: {
         50: '#F6F6F7',
         100: '#ECEEF0',
