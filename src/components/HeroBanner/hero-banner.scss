@@ -1,5 +1,31 @@
+.wrapper{
+    background-image: url('https://wallpaperaccess.com/full/885523.jpg');
+    @apply bg-cover;
+    @apply bg-center; 
+    @apply w-full;
+    @apply relative;
+    height: 450px;
+}
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /*dim the background*/
+    @apply z-0;
+  }
+
 .pill1{
     display: none;
+}
+div{
+    @apply z-10;
+}
+div p{
+    @apply  text-white;
 }
 .vertical-pill{
     border-radius: 1.5rem;
@@ -22,6 +48,20 @@
     .vertical-pill{
       display: block;
     }
+    div p{
+       @apply text-header;
+    }
+    .wrapper{
+        background-image: none;
+    }
+    .overlay{
+        display: none;
+    }
+    .wrapper{
+        border-radius: 1.5rem;
+        height: unset;
+      }
+      
 }
 @screen md{
     .vertical-pill{

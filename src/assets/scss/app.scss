@@ -9,10 +9,11 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: #f3f3f3;
 }
-.container{
-    width: 95vw;
+body .container{
+    @apply w-full;
+    @apply p-0;
+    @apply mx-auto;
     max-width: 1200px;
-    margin: 0 auto;
 }
 
 #app {
@@ -32,10 +33,6 @@ h1,h2{
   @apply text-main;
   @apply font-semibold;
   @apply text-3xl;
-}
-
-.wrapper{
-  border-radius: 1.5rem;
 }
 
 .card{
@@ -75,4 +72,16 @@ h1,h2{
         color: #42b983;
       }
     }
+  }
+
+  @screen sm{
+    body .container{
+      width: 95vw;
+    }
+}
+@screen md{
+
+}
+@screen lg {
+   
   }
