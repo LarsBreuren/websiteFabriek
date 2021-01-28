@@ -1,13 +1,27 @@
 
 .usp{
-    width: calc(30% - 1em);
-    margin: 0 .5em;
+    width: 70%;
+    margin: 1em;
+}
+.wrapper{
+  position: relative;
+  top: -6em;
+  z-index: 15;
 }
 @screen sm{
-
+  .usp{
+    width: calc(50% - 2em);
+    margin: 1em;
+  }
+  .wrapper{
+    top: 0;
+  }
 }
 @screen md{
-
+  .usp{
+    width: 30%;
+    margin: 0 .5em;
+}
 }
 @screen lg {
 

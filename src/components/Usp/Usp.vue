@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-around wrapper mt-128 mb-128">
+    <div class="flex flex-wrap justify-center md:justify-between wrapper mt-32 md:mt-128 mb-128">
         <a href="#" class="bg-white usp card">
             <v-icon
             size="75"
