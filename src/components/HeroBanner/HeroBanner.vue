@@ -10,7 +10,7 @@
             </h1>
            <div class="w-full text-center mt-16"> <p> Waarom zou je het anders willen? </p></div>
          <router-link to="/">
-            <div class="ctaButton mt-16">Contact</div>
+            <div class="ctaButton mt-16">Zo'n website wil ik!</div>
         </router-link>
         </div>
         <div class=" lg:w-1/3 flex justify-end lg:justify-center">

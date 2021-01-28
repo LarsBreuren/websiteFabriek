@@ -22,3 +22,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### Todo's
+- Mobile Hero banner image with text as overlay and dark transparent overlay
