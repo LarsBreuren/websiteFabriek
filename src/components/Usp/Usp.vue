@@ -1,4 +1,5 @@
 <template>
+  <div class="container">
     <div class="flex flex-wrap justify-center md:justify-between wrapper my-32 md:my-128">
         <a href="#" class="bg-white usp card">
             <v-icon
@@ -44,6 +45,7 @@
             </p>
         </a>
     </div>
+  </div>
 </template>
   
  

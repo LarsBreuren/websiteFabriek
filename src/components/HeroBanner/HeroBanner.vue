@@ -1,4 +1,5 @@
 <template>
+    <div class="container">
     <div class=" p-16 sm:p-0 w-full mx-auto flex justify-between items-center bg-white wrapper">
         <div class="overlay"></div>
         <div class="w-1/3 lg:flex justify-center pill1">
@@ -17,8 +18,7 @@
         <div class=" lg:w-1/3 flex justify-end lg:justify-center">
             <div class=" bg-main pill2 vertical-pill"></div>
         </div>
-
-
+    </div>
     </div>
   </template>
   

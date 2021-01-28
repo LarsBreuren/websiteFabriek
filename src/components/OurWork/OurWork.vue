@@ -1,4 +1,5 @@
 <template>
+  <div class="container">
     <div class="flex flex-wrap justify-between">
         <div class="w-full md:text-left"><h2 class="text-4xl my-16">Onze recente webdesigns</h2></div>
         <div class="flex flex-wrap">
@@ -21,6 +22,7 @@
             <img class="w-full mx-auto" alt="One of our webdesigns" src="https://www.premiumswebsites.nl/userfiles/premiumswebsites.nl/images/Mockup_Wolverine_Reizen.png">
           </div>
         </div>
+    </div>
     </div>
 </template>
   
