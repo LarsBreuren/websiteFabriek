@@ -1,0 +1,20 @@
+
+.design{
+  transition: 300ms;
+  &:hover{
+
+    transform: scale(1.2,1.2);
+  }
+}
+
+
+
+@screen sm{
+
+}
+@screen md{
+
+}
+@screen lg {
+
+}
