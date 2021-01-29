@@ -1,16 +1,15 @@
-
-.design{
-  transition: 300ms;
-  &:hover{
-
-    transform: scale(1.2,1.2);
-  }
+.wrapper{
+  margin: 40px 0;
 }
 
 img{
   height: 500px;
+  width: 100%;
+  object-fit: cover;
 }
-
+.textContent{
+  max-width: 700px;
+}
 
 
 @screen sm{
@@ -20,5 +19,12 @@ img{
 
 }
 @screen lg {
-
+  img{
+    height: calc(100% + 80px);
+    position: absolute;
+    top: -40px;
+    left: 10vw;
+    width: unset;
+    max-width: 350px;
+  }
 }

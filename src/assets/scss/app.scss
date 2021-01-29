@@ -9,13 +9,15 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: #f3f3f3;
 }
-body .container{
+body .containerFull, body .container{
     @apply w-full;
     @apply p-0;
     @apply mx-auto;
     max-width: 1200px;
 }
-
+body .containerFull{
+  max-width: unset;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
