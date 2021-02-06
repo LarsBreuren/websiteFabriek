@@ -23,7 +23,8 @@ export default class PriceList extends Vue {
 
   protected websiteLuxe = {
     "Website design op maat": "Het beste design voor jouw website, ontwikkeld door ervaren UX designers en vormgevers. Ontwikkeld door de beste developers",
-    "Logo, huisstijl, video": "Indien nodig kunnen wij u helpen met fotografie/video, logo's en een huisstijl",
+    "Huisstijl": "Onze designer gaat aan de slag om voor u een perfect design neer te zetten",
+    "Foto/video": "Indien gewenst kunnen wij u helpen met fotografie/video",
     "Headless CMS": "Het razendsnelle Vue.JS framework wordt gekoppeld aan een wordpress headless CMS. Hierdoor kan jij eenvoudig je teksten aanpassen terwijl de website zo snel mogelijk is.",
     "Website Pagina's": "Tot 15 pagina's inbegrepen.",
     "Website livezetservice": "Wij helpen je graag je website online te zetten op jouw gekozen domeinnaam.",
