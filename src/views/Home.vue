@@ -17,7 +17,6 @@ import Usp from "@/components/Usp/Usp.vue";
 import OurWork from "@/components/OurWork/OurWork.vue";
 import Success from "@/components/Success/Success.vue";
 import Prices from "@/components/Prices/Prices.vue";
-
 @Component({
   components: {
     HelloWorld,

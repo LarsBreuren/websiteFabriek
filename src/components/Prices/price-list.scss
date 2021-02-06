@@ -1,3 +1,8 @@
+.package{
+  box-shadow: 0 0 8px 0px #eee;
+  border-radius: 5px;
+}
+
 .packageBanner{
   height: 200px;
   z-index: -1;
@@ -5,5 +10,35 @@
 
 .overlay{
   background-color: rgba(114,81,235,0.5);
-  z-index: -1;
+}
+
+.label{
+  background-color: #3DB0D4;
+  top: -20px;
+  display: inline-block;
+}
+
+.question::after {
+  content: "›";
+  color: #333;
+  top: 0.3rem;
+  right: 0.5rem;
+  font-size:1.7rem;
+  transform:rotate(90deg);
+  position: absolute;
+}
+.active.question::after {
+  content: "›";
+  color: #333;
+  top: 0.3rem;
+  right: 1rem;
+  font-size:1.7rem;
+  transform:rotate(-90deg);
+  position: absolute;
+}
+.answer{
+  display: none;
+}
+.active .answer{
+  display: block;
 }
