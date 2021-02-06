@@ -4,8 +4,6 @@ import { Component, Vue, } from 'vue-property-decorator';
 @Component<PriceList>({})
 export default class PriceList extends Vue {
 
-  protected urlPath = '';
-  protected show = false;
 
     protected toggleClass(){
       console.log('heya');
@@ -15,25 +13,11 @@ export default class PriceList extends Vue {
   
   // }
 
- 
-protected toggle(){
-  console.log('yehaw')
-  this.show = !this.show;
-}
-  // protected Tester(){
-  //   const question = document.getElementsByClassName("question");
-  // for (let i = 0; i < question.length; i++) {
-  //   question[i].addEventListener("click", function() {
-  //     this.classList.toggle("active");
-  //     this.classList.toggle("text-green-700");
-  //     const answer = this.nextElementSibling;
-  //     if (answer.classList.contains("hidden")) {
-  //       answer.classList.toggle("hidden");
-  //     } else {
-  //       answer.classList.toggle("hidden");
-  //     }
-  //   });
-  //   }
-  // }
+  protected websiteComplete = {
+    "Website design": "Kies je Website Design, ontwikkeld door onze eigen vormgevers. Binnen jouw gekozen Design wordt de Website op maat gemaakt door onze vormgever. We maken eerst een Ontwerpvoorstel zodat we zeker weten dat de Website aan jouw wensen voldoet! ",
+    "Website Pagina's": "Wij ontwikkelen max. 10 pagina’s voor jouw Website. ",
+};
+
+
 }
 

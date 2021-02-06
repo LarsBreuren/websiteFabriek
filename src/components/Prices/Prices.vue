@@ -21,62 +21,51 @@
         <div class="relative label py-8 px-32 font-semibold bg-secondary">
           <p class="text-white">Inclusief:</p>
         </div>
-        <ul class="flex text-left">
-          <li class="flex-grow">
+        <div
+          class="bg-white w-full border border-gray-200 divide-y divide-gray-200"
+          v-for="(value, name) in websiteComplete"
+          :key="value.id"
+        >
+          <div class="relative">
+            <div
+              class="cursor-pointer absolute top-0 bottom-0 right-0 left-0 z-10"
+              @click="e => e.target.parentElement.classList.toggle('active')"
+            ></div>
+            <div
+              class=" flex flex-wrap justify-between relative items-center question px-32 py-8"
+            >
             <v-icon
-              size="30"
-              class="
-            text-main
-            cursor-pointer
-            w-full
-            inline
-          "
-            >
-              mdi-chevron-down</v-icon
-            >
-            Website design
-          </li>
-          <li class="w-1/10">
-            <v-icon
-              size="30"
-              class="
-            text-main
-            cursor-pointer
-            w-full
-            inline
-          "
-            >
-              mdi-check</v-icon
-            >
-          </li>
-        </ul>
+            size="30"
+            class="
+          text-main
+          cursor-pointer
+          absolute left-0
+          chevron
+        "
+          >
+            mdi-chevron-right</v-icon
+          >
+              <div >
+                <p class="pointTitle">{{ name }}</p>
+              </div>
+              <v-icon
+                size="30"
+                class="
+              cursor-pointer
+              inline
+              text-success-500
+            "
+              >
+                mdi-check</v-icon
+              >
+            </div>
+            <div class="text-base answer w-full px-32 py-8 text-left">
+              {{ value }}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <main
-      class="flex justify-center items-center p-4 h-screen w-full bg-gradient-to-r from-green-100 to-blue-100"
-    >
-      <div
-        class="bg-white w-1/2 border border-gray-200 divide-y divide-gray-200"
-      >
-        <div class="relative" @click="e => e.target.parentElement.classList.toggle('active')">
-          <div class="question py-3 px-4 cursor-pointer select-none w-full">
-            How is this made?
-          </div>
-          <div class="answer pt-1 pb-3 px-4">
-            With TailwindCSS, JS and some extra css for ::after adjustments.
-          </div>
-        </div>
-        <div class="relative" @click="e => e.target.parentElement.classList.toggle('active')">
-          <div class="question py-3 px-4 cursor-pointer select-none w-full">
-            Can I use it?
-          </div>
-          <div class="answer pt-1 pb-3 px-4">
-            Of course. It's yours to use wherever and whenever you like.
-          </div>
-        </div>
-      </div>
-    </main>
   </div>
 </template>
 

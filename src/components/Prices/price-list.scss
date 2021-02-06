@@ -18,27 +18,17 @@
   display: inline-block;
 }
 
-.question::after {
-  content: "›";
-  color: #333;
-  top: 0.3rem;
-  right: 0.5rem;
-  font-size:1.7rem;
-  transform:rotate(90deg);
-  position: absolute;
-}
-.active.question::after {
-  content: "›";
-  color: #333;
-  top: 0.3rem;
-  right: 1rem;
-  font-size:1.7rem;
-  transform:rotate(-90deg);
-  position: absolute;
-}
 .answer{
   display: none;
 }
 .active .answer{
   display: block;
+}
+
+.active .chevron{
+  transform: rotate(90deg);
+}
+
+.active .pointTitle{
+  @apply text-main;
 }
