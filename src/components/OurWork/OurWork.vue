@@ -4,10 +4,11 @@
       <div class="w-full md:text-left">
         <h2 class="text-4xl mb-16">Onze recente webdesigns.</h2>
       </div>
-      <div class="pca-hold w-2/5 py-32 relative">
+      <div v-for="item in projects" :key="item.name" >
+      <div class="pca-hold lg:w-2/5 p-16 relative imac">
         <div class="pca-main">
           <img
-            src="../../assets/images/portfolio/benb-desktop.png"
+            src="../../assets/images/portfolio/{{ item.name }}-desktop.png"
             class="h-full w-full"
           />
           <div class="pca-inner"></div>
@@ -21,7 +22,7 @@
         </div>
         <div class="iphone-x absolute">
           <img
-            src="../../assets/images/portfolio/benb-mobile.png"
+            src="../../assets/images/portfolio/{{ item.name }}-mobile.png"
             alt="Recent mobile webdesign"
             class="w-full h-full"
           />
@@ -31,6 +32,8 @@
       </div>
     </div>
   </div>
+  </div>
 </template>
 
 <style scoped lang="scss" src="@/components/OurWork/our-work.scss"></style>
+<script src="@/components/OurWork/our-work.ts"></script>

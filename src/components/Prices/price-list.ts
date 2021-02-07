@@ -4,11 +4,6 @@ import { Component, Vue, } from 'vue-property-decorator';
 @Component<PriceList>({})
 export default class PriceList extends Vue {
 
-
-    protected toggleClass(){
-      console.log('heya');
-    }
-
   // protected mounted(): void {
   
   // }

@@ -14,13 +14,15 @@
     transform: scale(1.2,1.2);
   }
 }
-.pca-hold {
- 
+
+.imac{
+  width: 350px;
+  max-width: 95vw;
 }
 .pca-hold .pca-main {
   display: block;
   position: relative;
-  height: 250px;
+  height: 200px;
   border: 10px solid #2d2d2d;
   border-top-left-radius: 14.4px;
   border-top-right-radius: 14.4px;
@@ -196,15 +198,13 @@ body {
 }
 
 @screen sm{
-  .mobile{
-    left: 30px;
-  }
+
 }
 @screen md{
-  .mobile{
-    left: 20px;
-  }
+
 }
 @screen lg {
-
+  .pca-hold .pca-main {
+    height: 250px;
+  }
 }
