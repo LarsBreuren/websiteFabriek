@@ -4,11 +4,10 @@
       <div class="w-full md:text-left">
         <h2 class="text-4xl mb-16">Onze recente webdesigns.</h2>
       </div>
-      <div v-for="item in projects" :key="item.name" >
-      <div class="pca-hold lg:w-2/5 p-16 relative imac">
+      <div v-for="item in projects" :key="item.name" class="pca-hold lg:w-2/5 p-16 relative imac">
         <div class="pca-main">
           <img
-            src="../../assets/images/portfolio/{{ item.name }}-desktop.png"
+            :src="getImgUrl(item)"
             class="h-full w-full"
           />
           <div class="pca-inner"></div>
@@ -22,7 +21,7 @@
         </div>
         <div class="iphone-x absolute">
           <img
-            src="../../assets/images/portfolio/{{ item.name }}-mobile.png"
+            :src="getImgUrlMobile(item)"
             alt="Recent mobile webdesign"
             class="w-full h-full"
           />
@@ -30,7 +29,6 @@
           <b>Camera</b>
         </div>
       </div>
-    </div>
   </div>
   </div>
 </template>
