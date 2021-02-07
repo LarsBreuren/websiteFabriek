@@ -13,7 +13,19 @@
           <div class="pca-inner"></div>
         </div>
         <div class="pca-sub">
-          <div class="pca-top"></div>
+          <div class="pca-top relative">
+          <v-icon
+          size="30"
+          class="
+            text-black
+            cursor-pointer
+            w-full
+            absolute
+            logoMac
+          "
+          >mdi-carrot</v-icon
+        ></div>
+
           <div class="pca-mid">
             <div class="pca-part"></div>
           </div>

@@ -49,19 +49,11 @@
   opacity: 1;
   z-index: 2;
 }
-.pca-hold .pca-sub .pca-top:after {
-  content: '';
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  -o-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAeUExURQAAADAsLiYiIycjJColJysmKC0mKjMtLykkJiMfIJJeh/oAAAAJdFJOUwAq68uOQmUTrzcLkcAAAADuSURBVCjPbZI7DwFREIVn41mugkSn8NpuEwnZTqskRHQqiQ6JfkMhSruI829Z99rMNXOKW3yZx5mZS8RUOpNQKUok3CKVgcBdwANwE3ACjAWMlJKVABcJ0f0D9SlRjfab6S5n3gkY+jQPgPaO9QX65+xFx7IquNYsMFf4G4/pZYoWHBib7BVniW/8OCWfJrAccWj3VAw4bFmoGPqzHmqRPa3mQ+tuT+f6tOY/5+YaGdh0YKotBN1vgbILk+/xPRfefWXzN61TrAz6M0qR3DLRTGY7pvJsM2ky4B8kCw3QXlLjitRn3+64yEb2Foa9AZ6l7piHRtOVAAAAAElFTkSuQmCC);
-  background-size: cover;
+ .logoMac{
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
 }
 .pca-hold .pca-sub .pca-mid {
   display: block;
