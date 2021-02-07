@@ -102,7 +102,7 @@ body {
 }
 
 .iphone-x img{
-  border-radius: 25px;
+  border-radius: 20px;
 }
 .iphone-x {
   @apply z-10;
@@ -112,7 +112,7 @@ body {
   height: 230px;
   background-color: #7371ee;
   background-image: linear-gradient(60deg, #7371ee 1%,#a1d9d6 100%);
-  border-radius: 25px;
+  border-radius: 20px;
   box-shadow: 0px 0px 0px 2px #1f1f1f, 0px 0px 0px 3px #191919, 0px 0px 0px 6px #111;
   
   &:before,

@@ -42,7 +42,7 @@
           "
           >mdi-draw</v-icon
         >
-        <h2>Op maat?</h2>
+        <h2>Op maat</h2>
         <p>
           Een website moet aansluiten op jouw wensen. Daarom maken wij alle
           websites op maat.

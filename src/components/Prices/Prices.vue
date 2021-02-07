@@ -1,8 +1,8 @@
 <template>
   <div class="container md:my-128">
-    <div class="flex flex-wrap w-full justify-around">
+    <div class="flex flex-wrap w-full justify-around lg:justify-between">
 
-      <div class="mx-32 my-32 md:my-0 w-full md:w-2/5 self-start package bg-white">
+      <div class="mx-32 sm:mx-0 my-32 md:my-0 w-full md:w-2/5 self-start package bg-white">
         <div class="packageBanner relative flex justify-center items-center">
           <h3
             class="packageHeader z-20 text-4xl uppercase text-white font-bold"
@@ -75,7 +75,7 @@
         </div>
       </div>
 
-      <div class="mx-32 my-32 md:my-0 w-full md:w-2/5  self-start package bg-white">
+      <div class="mx-32 sm:mx-0 my-32 md:my-0 w-full md:w-2/5  self-start package bg-white">
         <div class="packageBanner relative flex justify-center items-center">
           <h3
             class="packageHeader z-20 text-4xl uppercase text-white font-bold"

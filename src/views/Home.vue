@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- <HelloWorld msg="This is the beginning" /> -->
     <HeroBanner></HeroBanner>
     <Usp></Usp>
     <OurWork></OurWork>

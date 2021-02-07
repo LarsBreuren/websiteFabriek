@@ -9,14 +9,14 @@
       </div>
       <div class=" lg:w-1/3 flex flex-wrap justify-center flex-grow">
         <h1
-          class="text-center font-bold text-white sm:text-header text-4xl md:text-6xl"
+          class="text-center uppercase font-bold text-white sm:text-header text-4xl md:text-6xl"
         >
           Simpel.<br />
           Effectief.<br />
           Voordelig.
         </h1>
         <div class="w-full text-center mt-16">
-          <p>Waarom zou je het anders willen?</p>
+          <p class="subtitle font-normal">Waarom zou je het anders willen?</p>
         </div>
         <router-link to="/">
           <div class="ctaButton mt-16">Zo'n website wil ik!</div>

@@ -2,7 +2,7 @@
   <div class="containerFull my-32 bg-offwhite-600 wrapper">
     <div class="container w-full">
     <div class="flex flex-wrap  ">
-      <div class="mx-auto w-1/2 sm:w-2/5 lg:w-2/5 relative">
+      <div class="mx-auto lg:mx-0 w-1/2 sm:w-2/5 lg:w-2/5 relative">
           <img
             src="../../assets/images/features/lars.jpg"
             alt="Wij maken jou succesvol op het internet"
