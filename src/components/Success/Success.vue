@@ -20,7 +20,7 @@
             reprehenderit officiis hic sed omnis id qui voluptate dolores
             provident?
           </p>
-          <p class="my-16  lg:pb-64">
+          <p class="my-16">
             Impedit, deserunt rem repudiandae aliquam est dolor amet eius fugiat
             quibusdam alias possimus aliquid? Cupiditate labore ipsam possimus
             aperiam inventore voluptates blanditiis ratione voluptatum?
