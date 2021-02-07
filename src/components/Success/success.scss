@@ -2,10 +2,13 @@
   margin: 40px 0;
 }
 
-img{
-  height: 500px;
+.onlineimg{
+  @apply relative;
+  top: -2em;
   width: 100%;
   object-fit: cover;
+  border-radius: 1.5em;
+  height: 100%;
 }
 .textContent{
   max-width: 700px;
@@ -13,17 +16,19 @@ img{
 
 
 @screen sm{
-
+  .onlineimg{
+    top: 0;
+    border-radius: 0;
+  }
 }
 @screen md{
 
 }
 @screen lg {
-  img{
+  div .onlineimg{
     height: calc(100% + 80px);
     position: absolute;
     top: -40px;
-    left: 10vw;
     width: unset;
     max-width: 350px;
   }
