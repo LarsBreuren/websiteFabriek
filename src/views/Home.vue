@@ -5,6 +5,7 @@
     <OurWork></OurWork>
     <Success></Success>
     <Prices></Prices>
+    <Headless> </Headless>
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import Usp from "@/components/Usp/Usp.vue";
 import OurWork from "@/components/OurWork/OurWork.vue";
 import Success from "@/components/Success/Success.vue";
 import Prices from "@/components/Prices/Prices.vue";
+import Headless from "@/components/Headless/Headless.vue";
 @Component({
   components: {
     HelloWorld,
@@ -23,7 +25,8 @@ import Prices from "@/components/Prices/Prices.vue";
     Usp,
     OurWork,
     Success,
-    Prices
+    Prices,
+    Headless
   }
 })
 export default class Home extends Vue {}
