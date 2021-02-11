@@ -41,10 +41,9 @@ export default class App extends Vue {
 
   protected async getData() {
     axios
-      .get("https://website-fabriek.online/index.php/wp-json/markers/v1/post")
+      .get("https://website-fabriek.online/index.php/wp-json/websitefabriek/v1/post")
       .then((response: AxiosResponse) => {
         this.data = response.data;
-        console.log("regf", this.data);
       });
   }
 }
