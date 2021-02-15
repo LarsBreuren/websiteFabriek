@@ -1,56 +1,11 @@
-
-
-
-  <template>
-    <div id="app">
-     <h1>Welkom, onderstaande namen worden via Wordpress opgehaald:</h1> 
-      <div v-if="!isLoading">
-        <ul v-for="(person, index) in data" :key="index">
-          <li>
-            {{ person.post_name }}
-           <img style="max-width:200px" v-bind:src="person.acf.image.url" /> 
-          </li>
-        </ul>
-        {{ data.id }}
-      </div>
+<template>
+  <div class="hello">
+    <h1>{{ fetchPosts[0].acf.Header }}</h1>
+    <div v-for="post in fetchPosts" :key="post.id">
+      <h3>Post Body:</h3>
+      <img :src="fetchPosts[0].acf.left_image.url" />
     </div>
-  </template>
-  
+  </div>
+</template>
 
-<script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
-
-// eslint-disable-next-line no-unused-vars
-import axios, { AxiosResponse } from "axios";
-
-@Component({
-  components: {}
-})
-export default class App extends Vue {
-  protected data = [];
-  protected isLoading = true;
-
-  mounted() {
-    this.initialize();
-  }
-
-  protected async initialize() {
-    await this.getData();
-    this.isLoading = false;
-  }
-
-  protected async getData() {
-    axios
-      .get("https://website-fabriek.online/index.php/wp-json/websitefabriek/v1/post")
-      .then((response: AxiosResponse) => {
-        this.data = response.data;
-      });
-  }
-}
-</script>
-
-<style
-  scoped
-  lang="scss"
-  src="@/components/HeroBanner/hero-banner.scss"
-></style>
+<script src="@/components/Headless/head-less.ts"></script>
