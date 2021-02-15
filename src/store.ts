@@ -21,7 +21,7 @@ const actions = {
   getPosts({ commit }: { commit: Function }) {
     axios
       .get(
-        "https://website-fabriek.online/index.php/wp-json/websitefabriek/v1/post"
+        "https://website-fabriek.online/wp-json/markers/v1/post"
       )
       .then(response => {
         commit("SET_POSTS", response.data);
