@@ -11,14 +11,14 @@
         <h1
           class="text-center uppercase font-bold text-white sm:text-header text-4xl md:text-6xl"
         >
-           <h1 v-html="fetchPosts[0].acf.Header"></h1>
+           <h1 v-html="data.Header"></h1>
         </h1>
 
         <div class="w-full text-center mt-16">
-          <p class="subtitle font-normal">Waarom zou je het anders willen?</p>
+          <p class="subtitle font-normal">{{ data.subtitle }}</p>
         </div>
         <router-link to="/">
-          <div class="ctaButton mt-16">Zo'n website wil ik!</div>
+          <div class="ctaButton mt-16">{{ data.button_text }}</div>
         </router-link>
       </div>
       <div class=" lg:w-1/3 flex justify-end lg:justify-center">

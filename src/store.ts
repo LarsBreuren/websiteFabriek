@@ -8,7 +8,7 @@ Vue.use(Vuex);
 
 //to handle state
 const state = {
-  posts: []
+  posts: [],
 };
 
 //to handle state
@@ -18,16 +18,20 @@ const getters = {
 
 //to handle actions
 const actions = {
-  getPosts({ commit }: { commit: Function }) {
-    axios
-      .get(
-        "https://website-fabriek.online/index.php/wp-json/websitefabriek/v1/post"
-      )
-      .then(response => {
-        commit("SET_POSTS", response.data);
-      });
+  getPosts(result: any){
+        result.commit("SET_POSTS");
   }
 };
+//   getPosts({ commit }: { commit: Function }) {
+//     axios
+//       .get(
+//         "https://website-fabriek.online/wp-json/markers/v1/post"
+//       )
+//       .then(response => {
+//         commit("SET_POSTS", response.data);
+//       });
+//   }
+// };
 
 //to handle mutations
 const mutations = {
