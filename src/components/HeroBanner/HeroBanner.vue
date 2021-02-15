@@ -11,10 +11,9 @@
         <h1
           class="text-center uppercase font-bold text-white sm:text-header text-4xl md:text-6xl"
         >
-          Simpel.<br />
-          Effectief.<br />
-          Voordelig.
+           <h1 v-html="fetchPosts[0].acf.Header"></h1>
         </h1>
+
         <div class="w-full text-center mt-16">
           <p class="subtitle font-normal">Waarom zou je het anders willen?</p>
         </div>
@@ -29,15 +28,9 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
-
-@Component
-export default class HeroBanner extends Vue {}
-</script>
-
 <style
   scoped
   lang="scss"
   src="@/components/HeroBanner/hero-banner.scss"
 ></style>
+<script src="@/components/HeroBanner/hero-banner.ts"></script>
