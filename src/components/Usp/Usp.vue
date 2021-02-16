@@ -13,10 +13,8 @@
           "
           >mdi-lightning-bolt</v-icon
         >
-        <h2>Razendsnel</h2>
-        <p>
-          Een snelle website is fijn, en kan doorslaggevend zijn hoe goed je
-          website wordt ontvangen. Wij zorgen dat alles vlot draait. Beloofd.
+        <h2>  {{ getPostAcfValue(post, "usp1header") }}</h2>
+        <p    v-html="getPostAcfValue(post, 'usp1text')">
         </p>
       </a>
       <a href="#" class="bg-white usp card">
@@ -29,8 +27,8 @@
           "
           >mdi-vuejs</v-icon
         >
-        <h2>Nieuwste techniek</h2>
-        <p>Als het om het web gaat wil je niet in een old timer rijden.</p>
+        <h2>  {{ getPostAcfValue(post, "usp2header") }}</h2>
+        <p v-html="getPostAcfValue(post, 'usp2text')"> </p>
       </a>
       <a href="#" class="bg-white usp card">
         <v-icon
@@ -42,14 +40,12 @@
           "
           >mdi-draw</v-icon
         >
-        <h2>Op maat</h2>
-        <p>
-          Een website moet aansluiten op jouw wensen. Daarom maken wij alle
-          websites op maat.
-        </p>
+        <h2>  {{ getPostAcfValue(post, "usp3header") }}</h2>
+        <p v-html="getPostAcfValue(post, 'usp3text')"> </p>
       </a>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss" src="@/components/Usp/usp.scss"></style>
+<script src="@/components/Usp/usp.ts"></script>
