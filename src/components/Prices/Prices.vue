@@ -7,7 +7,7 @@
           <h3
             class="packageHeader z-20 text-4xl uppercase text-white font-bold"
           >
-            Website compleet <br />
+            Basis website <br />
             <span class="text-6xl">&euro;799,-</span>
           </h3>
           <img
@@ -80,7 +80,7 @@
           <h3
             class="packageHeader z-20 text-4xl uppercase text-white font-bold"
           >
-            Maatwerk website <br />
+            Maatwerk website v.a <br />
             <span class="text-6xl">&euro;1299,-</span>
           </h3>
           <img
