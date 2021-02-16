@@ -1,20 +1,24 @@
 
 <?php
 
-function acf_to_rest_api($response, $post, $request) {
-    if (!function_exists('get_fields')) return $response;
-
-    if (isset($post)) {
-        $acf = get_fields($post->id);
-        $response->data['acf'] = $acf;
+function  markers_endpoint( $request_data ) {
+    $args = array(
+        'post_type' => 'post',
+        'posts_per_page'=>-1, 
+        'numberposts'=>-1
+    );
+    
+    $posts = get_posts($args);
+    foreach ($posts as $key => $post) {
+        $posts[$key]->acf = get_fields($post->ID);
     }
-    return $response;
+    return  $posts;
 }
     
 add_action( 'rest_api_init', function () {
     register_rest_route( 'markers/v1', '/post/', array(
         'methods' => 'GET',
-        'callback' => 'act_to_rest_api'
+        'callback' => 'markers_endpoint'
     ));
 });
 ?>
