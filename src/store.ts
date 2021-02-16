@@ -1,5 +1,4 @@
 // import dependency to handle HTTP request to our back end
-import axios from "axios";
 import Vuex from "vuex";
 import Vue from "vue";
 
@@ -8,7 +7,7 @@ Vue.use(Vuex);
 
 //to handle state
 const state = {
-  posts: [],
+  posts: []
 };
 
 //to handle state
@@ -18,8 +17,9 @@ const getters = {
 
 //to handle actions
 const actions = {
-  getPosts(result: any){
-        result.commit("SET_POSTS");
+  getPosts({ data, commit }: { commit: Function; data: any }) {
+    console.log("hi there2", data);
+    commit("SET_POSTS", data);
   }
 };
 //   getPosts({ commit }: { commit: Function }) {
@@ -47,3 +47,28 @@ export default new Vuex.Store({
   actions,
   mutations
 });
+
+// import Vue from 'vue';
+// import Vuex from 'vuex';
+// Vue.use(Vuex);
+// export default new Vuex.Store({
+//   state: {
+//     posts: null as Post[] | null,
+//   },
+//   getters: {
+//     posts(state): Post[] | null {
+//       return state.posts;
+//     },
+//   },
+//   mutations: {
+//     SET_POSTS: (state: any, posts: Post[]) => {
+//       state.posts = posts;
+//     },
+//   },
+//   actions: {
+//     setPosts: (context: any, posts: Post[]) => {
+//       context.commit('SET_POSTS', posts);
+//     },
+//   },
+//   modules: {},
+// });

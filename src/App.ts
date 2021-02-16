@@ -10,21 +10,23 @@ import axios from "axios";
   }
 })
 export default class App extends Vue {
-
   protected isLoading = true;
-  protected testie = '';
+  protected testie = "";
 
   async mounted() {
-    this.initData(); 
+    this.initData();
   }
 
   protected async initData() {
-    try{
-        const result = await axios.get('https://website-fabriek.online/wp-json/markers/v1/post');
-        this.$store.dispatch('getPosts', result.data);
-    }
-    catch (err) {
-        console.log(err);
+    try {
+      axios
+        .get("https://website-fabriek.online/wp-json/markers/v1/post")
+        .then(response => {
+          console.log("hi there", response.data);
+          this.$store.dispatch("getPosts", response.data);
+        });
+    } catch (err) {
+      console.log(err);
     }
     this.isLoading = false;
   }
