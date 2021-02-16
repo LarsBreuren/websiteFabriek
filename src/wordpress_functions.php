@@ -10,7 +10,7 @@ function  markers_endpoint( $request_data ) {
     
     $posts = get_posts($args);
     foreach ($posts as $key => $post) {
-        $posts[$key]->acf = get_fields($post->ID);
+        $posts[$key]->acf = array_filter(get_fields($post->ID));
     }
     return  $posts;
 }
@@ -20,5 +20,5 @@ add_action( 'rest_api_init', function () {
         'methods' => 'GET',
         'callback' => 'markers_endpoint'
     ));
-});
-?>
+
+    ?>

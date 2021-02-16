@@ -11,7 +11,6 @@ import axios from "axios";
 })
 export default class App extends Vue {
   protected isLoading = true;
-  protected testie = "";
 
   async mounted() {
     this.initData();
@@ -19,11 +18,10 @@ export default class App extends Vue {
 
   protected async initData() {
     try {
-      axios
+      await axios
         .get("https://website-fabriek.online/wp-json/markers/v1/post")
         .then(response => {
-          console.log("hi there", response.data);
-          this.$store.dispatch("getPosts", response.data);
+          this.$store.dispatch("setPosts", response.data);
         });
     } catch (err) {
       console.log(err);

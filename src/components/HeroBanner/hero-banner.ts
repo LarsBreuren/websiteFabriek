@@ -1,14 +1,15 @@
+import PostInterface from "@/interfaces/post";
 import { Component, Vue } from "vue-property-decorator";
+import getPostByPostName from "../support/getPostByPostName";
 
 @Component({})
 export default class Headless extends Vue {
-
   protected data = [];
 
-  public mounted() {
-    this.data = this.$store.state.posts.HeroBanner.acf;
+  protected get post(): PostInterface | undefined {
+    return getPostByPostName(this.$store.getters.posts, "herobanner");
   }
-  protected get fetchPosts() {
-    return 
-  }
+  // protected get usp(): PostInterface | undefined { als je een andere group moet benaderen
+  //   return getPostByPostName(this.$store.getters.posts, "usp");
+  // }
 }
