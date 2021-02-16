@@ -8,7 +8,7 @@
             class="packageHeader z-20 text-4xl uppercase text-white font-bold"
           >
             Basis website <br />
-            <span class="text-6xl">&euro;799,-</span>
+            <span class="text-6xl">&euro;899,-</span>
           </h3>
           <img
             src="../../assets/images/features/coding.jpeg"
@@ -81,7 +81,7 @@
             class="packageHeader z-20 text-4xl uppercase text-white font-bold"
           >
             Maatwerk website v.a <br />
-            <span class="text-6xl">&euro;1299,-</span>
+            <span class="text-6xl">&euro;1499,-</span>
           </h3>
           <img
             src="../../assets/images/features/maatwerk.jpg"
