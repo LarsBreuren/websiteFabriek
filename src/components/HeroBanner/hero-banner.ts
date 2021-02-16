@@ -9,7 +9,12 @@ export default class Headless extends Vue {
   protected get post(): PostInterface | undefined {
     return getPostByPostName(this.$store.getters.posts, "herobanner");
   }
-  // protected get usp(): PostInterface | undefined { als je een andere group moet benaderen
-  //   return getPostByPostName(this.$store.getters.posts, "usp");
-  // }
+  protected getPostAcfValue(post: PostInterface | undefined, key: string): any {
+    return post && post.acf && (post.acf as Record<string, any>)[key]
+      ? (post.acf as Record<string, any>)[key]
+      : "Oeps";
+  }
+  protected get usp(): PostInterface | undefined {
+    return getPostByPostName(this.$store.getters.posts, "usp");
+  }
 }
