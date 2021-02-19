@@ -69,6 +69,7 @@
         <div class="text-center text-main py-32 ">
             <p class="font-semibold">25,- Per maand</p>
             <p class="text-base">Inclusief hosting + domeinnaam</p>
+            <p class="text-base">Prijzen ex BTW</p>
             <router-link to="/">
               <div class="ctaButton mt-8 py-8 px-32 inline-block">Bestel</div>
             </router-link>
@@ -142,6 +143,7 @@
         <div class="text-center text-main py-32 ">
           <p class="font-semibold">35,- Per maand</p>
           <p class="text-base">Inclusief hosting + domeinnaam</p>
+          <p class="text-base">Prijzen ex BTW</p>
           <router-link to="/">
             <div class="ctaButton mt-8 py-8 px-32 inline-block">Bestel</div>
           </router-link>

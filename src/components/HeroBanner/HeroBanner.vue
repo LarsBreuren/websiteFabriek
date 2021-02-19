@@ -8,6 +8,9 @@
         <div class="bg-main vertical-pill"></div>
       </div>
       <div class="lg:w-1/3 flex flex-wrap justify-center flex-grow">
+        <h2 class="subtitle font-normal text-main">
+          {{ getPostAcfValue(post, "banner_title") }}
+        </h2>
         <h1
           class="text-center uppercase font-bold text-white sm:text-header text-4xl md:text-6xl"
           v-html="getPostAcfValue(post, 'Header')"
