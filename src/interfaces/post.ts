@@ -25,5 +25,6 @@ export default interface PostInterface {
   post_mime_type?: string;
   comment_count?: string;
   filter?: string;
+  category?: string;
   acf?: AcfInterface;
 }

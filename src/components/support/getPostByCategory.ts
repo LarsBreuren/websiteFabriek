@@ -8,6 +8,6 @@ export default (
     return undefined;
   }
   return posts.find((post: PostInterface): boolean => {
-    return post.acf.category === postName;
+    return post.category === postName;
   });
 };

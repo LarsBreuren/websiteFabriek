@@ -7,11 +7,11 @@
           <div class="caseContentContainer w-1/2 ">
             <div class="caseContent relative">
               <p class="bigGreyTitle">
-                Praktijk
+                {{ getPostAcfValue(post, "grey_title") }}
               </p>
 
-            <h2 class="caseHeader">Case</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga illo veniam distinctio mollitia vel animi magni labore quae consequuntur? Dolor nihil ratione et commodi autem voluptas sint! Molestias, omnis veniam!</p>
+            <h2 class="caseHeader">{{ getPostAcfValue(post, "case_title") }}</h2>
+            <p>{{ getPostAcfValue(post, "case_text") }}</p>
             <router-link to="/portfolio">
               <div class="w-1/3 mx-auto ctaButton mt-16">
                 Bekijk case
