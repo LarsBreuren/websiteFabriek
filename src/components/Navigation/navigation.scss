@@ -3,6 +3,9 @@
     width: 70%;
     margin: 1em;
 }
+a{
+  @apply uppercase;
+}
 .wrapper{
   position: relative;
   top: -6em;
