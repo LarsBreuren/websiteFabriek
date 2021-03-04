@@ -11,7 +11,6 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import HelloWorld from "@/components/HelloWorld.vue";
 import HeroBanner from "@/components/HeroBanner/HeroBanner.vue";
 import Usp from "@/components/Usp/Usp.vue";
 import OurWork from "@/components/OurWork/OurWork.vue";
@@ -20,7 +19,6 @@ import Prices from "@/components/Prices/Prices.vue";
 import Headless from "@/components/Headless/Headless.vue";
 @Component({
   components: {
-    HelloWorld,
     HeroBanner,
     Usp,
     OurWork,
