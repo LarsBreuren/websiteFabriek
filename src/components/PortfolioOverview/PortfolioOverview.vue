@@ -1,6 +1,6 @@
 <template>
-  <div class="containerFull">
-         <div class="caseContainer flex">
+  <div class="containerFull">  
+         <div class="caseContainer flex" v-for="post in post" :key="post.name">
           <div class="caseImg relative w-1/2">
             <img class="absolute h-full w-full object-cover" src="../../assets/images/portfolio/praktijk-thumb.jpg" alt="Portfolio banner background image">
           </div>

@@ -4,9 +4,10 @@ import getPostByCategory from "../support/getPostByCategory";
 
 @Component({})
 export default class PortfolioOverview extends Vue {
-  protected get post(): PostInterface | undefined {
+  protected get post(): PostInterface[] | undefined {
     return getPostByCategory(this.$store.getters.posts, "Case thumbnail");
   }
+
 
   protected getPostAcfValue(post: PostInterface | undefined, key: string): any {
     console.log('hello there', post)
