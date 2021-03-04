@@ -1,11 +1,11 @@
 import PostInterface from "@/interfaces/post";
 import { Component, Vue } from "vue-property-decorator";
-import getPostByPostName from "../support/getPostByPostName";
+import getPostByCategory from "../support/getPostByCategory";
 
 @Component({})
 export default class PortfolioOverview extends Vue {
   protected get post(): PostInterface | undefined {
-    return getPostByPostName(this.$store.getters.posts, "cases");
+    return getPostByCategory(this.$store.getters.posts, "caseThumbnail");
   }
   protected getPostAcfValue(post: PostInterface | undefined, key: string): any {
     return post && post.acf && (post.acf as Record<string, any>)[key]
