@@ -71,7 +71,7 @@
             <p class="text-base">Inclusief hosting + domeinnaam</p>
             <p class="text-base">Prijzen ex BTW</p>
             <router-link to="/">
-              <div class="ctaButton mt-8 py-8 px-32 inline-block">Bestel</div>
+              <div class="ctaButton mt-8 py-8 px-32">Bestel</div>
             </router-link>
         </div>
       </div>
@@ -145,7 +145,7 @@
           <p class="text-base">Inclusief hosting + domeinnaam</p>
           <p class="text-base">Prijzen ex BTW</p>
           <router-link to="/">
-            <div class="ctaButton mt-8 py-8 px-32 inline-block">Bestel</div>
+            <div class="ctaButton mt-8 py-8 px-32">Bestel</div>
           </router-link>
       </div>
       </div>

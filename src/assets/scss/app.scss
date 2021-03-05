@@ -55,6 +55,7 @@ h1,h2{
 }
 
 .ctaButton{
+    @apply inline-block;
     @apply text-white;
     @apply py-8;
     @apply px-16;

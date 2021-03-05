@@ -13,6 +13,7 @@
   @apply justify-center;
   @apply flex-wrap;
   @apply p-32;
+  @apply mb-32;
 }
 
 .caseContainer:nth-child(even){
@@ -21,29 +22,39 @@
 .bigGreyTitle{
   @apply uppercase;
   @apply absolute;
-  @apply text-7xl;
   @apply text-offwhite-600;
   @apply left-0;
   @apply right-0;
   @apply font-bold;
   top: -30px;
   z-index: -1;
+  @apply text-6xl;
+  @apply block;
 }
 
 .caseHeader{
   @apply uppercase;
   @apply text-main;
   @apply mb-32;
+  @apply text-2xl;
 }
 
 @screen sm{
   .caseImg{
     height: 400px;
   }
+  .caseContentContainer{
+    @apply mb-0;
+  }
 }
 @screen md{
-
+  .caseHeader{
+    @apply text-3xl;
+  }
 }
 @screen lg {
-  
+    .bigGreyTitle{
+      @apply text-7xl;
+      top: -30px;
+    }
   }

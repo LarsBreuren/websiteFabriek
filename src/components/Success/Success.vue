@@ -26,7 +26,7 @@
             aperiam inventore voluptates blanditiis ratione voluptatum?
           </p>
           <router-link to="/">
-            <div class="ctaButton py-8 mb-16 inline-block">
+            <div class="ctaButton py-8 mb-16">
               Zo'n website wil ik!
             </div>
           </router-link>
