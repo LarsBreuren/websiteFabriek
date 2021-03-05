@@ -11,8 +11,8 @@
               </p>
 
             <h2 class="caseHeader">{{ getPostAcfValue(post, "case_title") }}</h2>
-            <p>{{ getPostAcfValue(post, "case_text") }}</p> <!-- ToDo fix <br> / v-html-->
-            <router-link to="/portfolio"> <!-- ToDo fix with acf-->
+            <p v-html="getPostAcfValue(post, 'case_text')"></p>  
+            <router-link :to="getPostAcfValue(post, 'case_link')"> <!-- ToDo fix with acf-->
               <div class="w-1/3 mx-auto ctaButton mt-16">
                 Bekijk case
               </div>
