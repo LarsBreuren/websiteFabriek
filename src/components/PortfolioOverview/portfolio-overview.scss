@@ -1,6 +1,10 @@
 
 .caseImg{
-  height: 400px;
+  height: 300px;
+}
+
+.cases{
+  max-width: 1500px;
 }
 
 .caseContentContainer{
@@ -9,6 +13,10 @@
   @apply justify-center;
   @apply flex-wrap;
   @apply p-32;
+}
+
+.caseContainer:nth-child(even){
+  flex-direction: row-reverse;
 }
 .bigGreyTitle{
   @apply uppercase;
@@ -29,7 +37,9 @@
 }
 
 @screen sm{
-      
+  .caseImg{
+    height: 400px;
+  }
 }
 @screen md{
 
