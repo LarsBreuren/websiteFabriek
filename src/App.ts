@@ -1,6 +1,6 @@
 import { Component, Vue } from "vue-property-decorator";
-import Footer from "@/components/Footer/Footer.vue";
-import Navigation from "@/components/Navigation/Navigation.vue";
+import Footer from "@/components/Website/Footer/Footer.vue";
+import Navigation from "@/components/Website/Navigation/Navigation.vue";
 import axios from "axios";
 
 @Component({

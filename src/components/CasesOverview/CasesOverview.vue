@@ -1,8 +1,8 @@
 <template>
-  <div class="containerFull cases mt-32 sm:mt-0">  
+  <div class="containerFull cases mt-32">  
          <div class="caseContainer flex flex-wrap" v-for="post in post" :key="post.name">
           <div class="caseImg relative w-full sm:w-1/2">
-            <img class="absolute h-full w-full object-cover" :src="getPostAcfValue(post, 'case_image').url" alt="Portfolio banner background image">
+            <img class="absolute h-full w-full object-cover" :src="getPostAcfValue(post, 'case_image').url" alt="Cases banner background image">
           </div>
           <div class="caseContentContainer w-full sm:w-1/2 ">
             <div class="caseContent relative ">
@@ -26,9 +26,9 @@
 <style
   scoped
   lang="scss"
-  src="@/components/PortfolioOverview/portfolio-overview.scss"
+  src="@/components/CasesOverview/cases-overview.scss"
 ></style>
-<script src="@/components/PortfolioOverview/portfolio-overview.ts"></script>
+<script src="@/components/CasesOverview/cases-overview.ts"></script>
 
 
      <!-- {{ getPostAcfValue(post, "banner_title") }} -->

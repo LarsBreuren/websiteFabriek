@@ -7,8 +7,8 @@
           <h3
             class="packageHeader z-20 text-4xl uppercase text-white font-bold"
           >
-            Basis website <br />
-            <span class="text-6xl">&euro;899,-</span>
+            Basis website v.a <br />
+            <span class="text-6xl">&euro;799,-</span>
           </h3>
           <img
             src="../../assets/images/features/coding.jpeg"

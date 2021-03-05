@@ -3,7 +3,7 @@ import { Component, Vue } from "vue-property-decorator";
 import getPostByPostName from "../support/getPostByPostName";
 
 @Component({})
-export default class PortfolioOverview extends Vue {
+export default class CasesOverview extends Vue {
   protected get post(): PostInterface | undefined {
     return getPostByPostName(this.$store.getters.posts, "cases");
   }
