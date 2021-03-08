@@ -63,9 +63,9 @@
         top: 0;
         background-color: #f3f3f3;
         box-shadow: 0 3px 3px -3px rgba(0,0,0,.2);
-
-        .logo, .logo svg{
-            @apply max-h-full;
+      
+        .logo svg{
+            height: 50px;
         }
     }
 
@@ -75,7 +75,8 @@
         @apply fixed;
         @apply h-full;
         @apply z-50;
-        top: 60px;
+        padding-top: 5px;
+        padding-bottom: 5px;
         right: 0;
         background-color: #f3f3f3;
 
