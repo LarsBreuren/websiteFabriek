@@ -10,7 +10,6 @@ export default class PortfolioOverview extends Vue {
 
 
   protected getPostAcfValue(post: PostInterface | undefined, key: string): any {
-    console.log('hello there', post)
     return post && post.acf && (post.acf as Record<string, any>)[key]
       ? (post.acf as Record<string, any>)[key]
       : "Probleem met content laden";

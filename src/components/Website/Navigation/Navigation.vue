@@ -2,19 +2,18 @@
   <nav class="topnav">
     <transition name="fade"> <div v-if="hamburger" class="pageOverlay"></div></transition>
     <div class="desktop">
-    <a href="#" class="logo"><img src="../../../assets/logo.png" alt="Logo"></a>
+      <router-link to="/" title="home" class="logo"><img src="../../../assets/logo.png" alt="Logo"></router-link>
     <div class="links">
       <ul>
-        <li><a href="#" class="active">Desktop nav</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/cases">Cases</router-link> </li>
+        <li><a href="https://website-fabriek.online/wp-login.php" target="_blank">Login</a></li>
       </ul>
     </div>
   </div>
   
     <div class="mobile" >
-      <a href="#" class="logo"><img src="../../../assets/logo.png" alt="Logo"></a>
+      <router-link to="/" class="logo"><img src="../../../assets/logo.png" alt="Logo"></router-link>
       <button v-on:click="toggle()" class="navToggle"> 
         <v-icon
         v-if="hamburger"
@@ -38,10 +37,9 @@
     <transition name="fade">
     <div v-if="hamburger" class="hamburgerLinks">
         <ul>
-          <li><a href="#" class="active">Mobile nav</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><router-link @click.native="toggle()" to="/">Home</router-link></li>
+          <li><router-link @click.native="toggle()" to="/cases">Cases</router-link> </li>
+          <li><a href="https://website-fabriek.online/wp-login.php" target="_blank">Login</a></li>
         </ul>
 
   </div>
@@ -51,12 +49,3 @@
 
 <script src="@/components/Website/Navigation/navigation.ts"></script>
 <style lang="scss" src="@/components/Website/Navigation/navigation.scss"></style>
-
-
-<!-- <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/cases">Cases</router-link> |
-    <a href="https://website-fabriek.online/wp-login.php" target="_blank">Login</a>
-  </div>
-</template> -->
