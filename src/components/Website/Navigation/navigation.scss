@@ -47,32 +47,31 @@
                 @apply text-main;
             }
         }
-        .logo img{
+        .logo svg{
             height: 50px;
         }
     }
     .mobile{
         @apply flex;
-        @apply flex-wrap;
         @apply py-8;
         @apply px-16;
         @apply justify-between;
         @apply fixed;
-        @apply z-50;
+        @apply z-60;
         @apply w-full;
         height: 60px;
         top: 0;
         background-color: #f3f3f3;
         box-shadow: 0 3px 3px -3px rgba(0,0,0,.2);
 
-        .logo, .logo img{
+        .logo, .logo svg{
             @apply max-h-full;
         }
     }
 
     .hamburgerLinks{
         @apply self-center;
-        @apply w-2/5;
+        @apply w-1/2;
         @apply fixed;
         @apply h-full;
         @apply z-50;
@@ -86,7 +85,7 @@
         }
         li{
             @apply ml-16;
-            @apply my-8;
+            @apply my-16;
         }
         a{
             @apply uppercase;
@@ -102,7 +101,15 @@
       .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
         opacity: 0;
       }
-
+      .st0{fill:#7251EB;stroke:#3DB0D4;stroke-width:4;}
+      .st1{fill:none;stroke:#7251EB;stroke-width:4;}
+      .st2{fill:#F3F3F3;stroke:#F3F3F3;stroke-width:4;}
+      .st3{fill:#FFFFFF;stroke:#7251EB;stroke-width:4;}
+      .st4{display:none;fill:#3DB0D4;}
+      .st5{font-family:'RobotoCondensed-Bold';}
+      .st6{font-size:50px;}
+      .st7{display:none;fill:#7251EB;}
+      .st8{fill:#7251EB;}
     }
 
 

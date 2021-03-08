@@ -7,6 +7,5 @@ export default class Usp extends Vue {
 
   protected toggle() {
     this.hamburger = !this.hamburger
-    console.log( 'state: ', this.hamburger)
   }
   }

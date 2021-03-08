@@ -12,7 +12,7 @@ import CasesHeader from "@/components/CasesHeader/CasesHeader.vue";
 @Component({
   components: {
     CasesOverview,
-    CasesHeader
+    CasesHeader,
   }
 })
 export default class About extends Vue {}
