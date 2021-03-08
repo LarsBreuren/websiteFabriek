@@ -92,7 +92,7 @@
         a{
             @apply uppercase;
         }
-        .router-link-exact-active{
+        .router-link-exact-active, .router-link-exact-active .v-icon{
             @apply text-main;
         }
     }
