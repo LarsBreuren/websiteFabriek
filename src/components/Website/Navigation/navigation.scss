@@ -1,30 +1,111 @@
 
-.usp{
-    width: 70%;
-    margin: 1em;
-}
-a{
-  @apply uppercase;
-}
-.wrapper{
-  position: relative;
-  top: -6em;
-  z-index: 15;
-}
+
+ 
+
+    body{
+        padding-top: 60px;
+    }
+    nav {
+        .pageOverlay{
+            background-color: rgba(0,0,0,0.5);
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            @apply z-30;
+        }
+    .desktop{
+        @apply justify-between;
+        @apply px-32;
+        @apply py-8;
+        @apply hidden;
+        @apply fixed;
+        @apply w-full;
+        @apply z-50;
+        background-color: #f3f3f3;
+        top: 0;
+
+        .links{
+            @apply self-center;
+            ul{
+                @apply flex;
+            }
+            li{
+                @apply mx-8;
+            }
+            a{
+                @apply uppercase;
+            }
+            a:hover{
+                color: red;
+            }
+        }
+        .logo img{
+            height: 60px;
+        }
+    }
+    .mobile{
+        @apply flex;
+        @apply flex-wrap;
+        @apply py-8;
+        @apply px-16;
+        @apply justify-between;
+        @apply fixed;
+        @apply z-50;
+        @apply w-full;
+        height: 60px;
+        top: 0;
+        background-color: #f3f3f3;
+
+        .logo, .logo img{
+            @apply max-h-full;
+        }
+    }
+
+    .hamburgerLinks{
+        @apply self-center;
+        @apply w-2/5;
+        @apply fixed;
+        @apply h-full;
+        @apply z-50;
+        top: 60px;
+        right: 0;
+        background-color: #f3f3f3;
+
+
+        ul{
+            @apply text-left;
+        }
+        li{
+            @apply ml-16;
+            @apply my-8;
+        }
+        a{
+            @apply uppercase;
+        }
+    }
+
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity .5s;
+      }
+      .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+        opacity: 0;
+      }
+
+    }
+
+
 @screen sm{
-  .usp{
-    width: calc(50% - 2em);
-    margin: 1em;
-  }
-  .wrapper{
-    top: 0;
-  }
+    nav .desktop{
+        @apply flex;
+    }
+    nav .mobile, nav .hamburgerLinks{
+        @apply hidden;
+    }
 }
 @screen md{
-  .usp{
-    width: 30%;
-    margin: 0 .5em;
-}
+
 }
 @screen lg {
 

@@ -45,4 +45,4 @@
 </template>
 
 <style scoped lang="scss" src="@/components/Website/Footer/footer.scss"></style>
-{{ getPostAcfValue(post, "button_text") }}
+<!-- {{ getPostAcfValue(post, "button_text") }} -->
