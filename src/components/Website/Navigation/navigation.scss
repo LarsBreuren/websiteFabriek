@@ -63,6 +63,7 @@
         height: 60px;
         top: 0;
         background-color: #f3f3f3;
+        box-shadow: 0 3px 3px -3px rgba(0,0,0,.2);
 
         .logo, .logo img{
             @apply max-h-full;
@@ -89,6 +90,9 @@
         }
         a{
             @apply uppercase;
+        }
+        .router-link-exact-active{
+            @apply text-main;
         }
     }
 
