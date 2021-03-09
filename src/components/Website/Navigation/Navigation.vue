@@ -3,23 +3,7 @@
     <transition name="fade"> <div @click="toggle()" v-if="hamburger" class="pageOverlay"></div></transition>
     <div class="desktop">
       <router-link to="/" title="home" class="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 151.5 82.5" style="enable-background:new 0 0 151.5 82.5;" xml:space="preserve">
-          <g id="Layer_2">
-            <line class="st0" x1="111.8" y1="55.3" x2="132.8" y2="55.3"/>
-            <line class="st0" x1="111.8" y1="27" x2="132.8" y2="27"/>
-            <line class="st0" x1="18.5" y1="55.3" x2="39.5" y2="55.3"/>
-            <line class="st0" x1="18.5" y1="27" x2="39.5" y2="27"/>
-            <circle class="st1" cx="75.5" cy="41.2" r="38.4"/>
-            <rect x="64.6" y="2.5" class="st2" width="21.8" height="78"/>
-            <line class="st3" x1="113.9" y1="41.2" x2="149.3" y2="41.2"/>
-            <line class="st3" x1="1.7" y1="41.2" x2="37.1" y2="41.2"/>
-            <text transform="matrix(1 0 0 1 57.5667 59.0419)" class="st4 st5 st6">W </text>
-            <text transform="matrix(1 0 0 1 56.5665 59.625)" class="st7 st5 st6">W </text>
-          </g>
-          <g id="Laag_2">
-            <polygon class="st8" points="57.6,24.1 64.8,24.1 68.1,46.4 72.3,24.1 78.3,24.1 82.5,46.4 85.9,24.1 93,24.1 86.7,59.6 79.5,59.6    75.3,38.7 71.2,59.6 64,59.6  "/>
-          </g>
-          </svg>
+        <img :src="logo" />
       </router-link>
     <div class="links">
       <ul>
@@ -32,23 +16,7 @@
   
     <div class="mobile" >
       <router-link to="/" title="home" class="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 151.5 82.5" style="enable-background:new 0 0 151.5 82.5;" xml:space="preserve">
-          <g id="Layer_2">
-            <line class="st0" x1="111.8" y1="55.3" x2="132.8" y2="55.3"/>
-            <line class="st0" x1="111.8" y1="27" x2="132.8" y2="27"/>
-            <line class="st0" x1="18.5" y1="55.3" x2="39.5" y2="55.3"/>
-            <line class="st0" x1="18.5" y1="27" x2="39.5" y2="27"/>
-            <circle class="st1" cx="75.5" cy="41.2" r="38.4"/>
-            <rect x="64.6" y="2.5" class="st2" width="21.8" height="78"/>
-            <line class="st3" x1="113.9" y1="41.2" x2="149.3" y2="41.2"/>
-            <line class="st3" x1="1.7" y1="41.2" x2="37.1" y2="41.2"/>
-            <text transform="matrix(1 0 0 1 57.5667 59.0419)" class="st4 st5 st6">W </text>
-            <text transform="matrix(1 0 0 1 56.5665 59.625)" class="st7 st5 st6">W </text>
-          </g>
-          <g id="Laag_2">
-            <polygon class="st8" points="57.6,24.1 64.8,24.1 68.1,46.4 72.3,24.1 78.3,24.1 82.5,46.4 85.9,24.1 93,24.1 86.7,59.6 79.5,59.6    75.3,38.7 71.2,59.6 64,59.6  "/>
-          </g>
-          </svg>
+        <img :src="logo" />
       </router-link>
       <button v-on:click="toggle()" class="navToggle"> 
         <v-icon

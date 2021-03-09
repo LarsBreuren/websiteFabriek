@@ -47,7 +47,7 @@
                 @apply text-main;
             }
         }
-        .logo svg{
+        .logo img{
             height: 50px;
         }
     }
@@ -65,7 +65,7 @@
         background-color: #f3f3f3;
         box-shadow: 0 3px 3px -3px rgba(0,0,0,.2);
       
-        .logo svg, .logo{
+        .logo img, .logo{
             height: 50px;
         }
     }
@@ -103,15 +103,6 @@
       .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
         opacity: 0;
       }
-      .st0{fill:#7251EB;stroke:#3DB0D4;stroke-width:4;}
-      .st1{fill:none;stroke:#7251EB;stroke-width:4;}
-      .st2{fill:#F3F3F3;stroke:#F3F3F3;stroke-width:4;}
-      .st3{fill:#FFFFFF;stroke:#7251EB;stroke-width:4;}
-      .st4{display:none;fill:#3DB0D4;}
-      .st5{font-family:'RobotoCondensed-Bold';}
-      .st6{font-size:50px;}
-      .st7{display:none;fill:#7251EB;}
-      .st8{fill:#7251EB;}
     }
 
 
