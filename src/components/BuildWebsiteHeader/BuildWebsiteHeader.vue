@@ -14,7 +14,7 @@
   <div class="bannerContent text-left bg-offwhite-600">
     <div class="container bannerText bg-offwhite-600 flex">
     <div class="w-full md:w-3/5">
-      <p class="font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illo eius expedita error
+      <p class="sm:font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illo eius expedita error
          reprehenderit, consectetur quidem sunt architecto atque magni nisi enim?
           Repellat impedit odio fuga eligendi porro repudiandae voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis, rerum sapiente molestiae reprehenderit architecto similique quo recusandae non accusamus!</p>
     </div>
