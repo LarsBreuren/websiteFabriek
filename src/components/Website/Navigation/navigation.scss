@@ -38,7 +38,7 @@
                 @apply flex;
             }
             li{
-                @apply mx-8;
+                @apply mx-16;
             }
             a{
                 @apply uppercase;
@@ -68,11 +68,12 @@
         .logo img, .logo{
             height: 50px;
         }
+
     }
 
     .hamburgerLinks{
         @apply self-center;
-        @apply w-1/2;
+        @apply w-2/3;
         @apply fixed;
         @apply h-full;
         @apply z-50;
@@ -84,13 +85,20 @@
 
         ul{
             @apply text-left;
+            padding-left: 7px;
+            padding-right: 7px;
         }
         li{
-            @apply ml-16;
             @apply my-32;
         }
         a{
             @apply uppercase;
+                @apply flex;
+                @apply items-center;
+
+                i{
+                    margin-right: 3px;
+                }
         }
         .router-link-exact-active, .router-link-exact-active .v-icon{
             @apply text-main;

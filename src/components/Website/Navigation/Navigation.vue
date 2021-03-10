@@ -9,6 +9,7 @@
       <ul>
         <li><router-link to="/">Home</router-link></li>
         <li><router-link to="/cases">Cases</router-link> </li>
+        <li><router-link to="/website-maken">Website laten maken</router-link> </li>
         <li><a href="https://website-fabriek.online/wp-login.php" target="_blank">Login</a></li>
       </ul>
     </div>
@@ -58,8 +59,17 @@
               text-black
               cursor-pointer
             "
-            >mdi-code-braces</v-icon>
+            >mdi-briefcase-check-outline</v-icon>
             Cases</router-link> </li>
+          <li><router-link @click.native="toggle()" to="/website-maken">
+            <v-icon
+            size="30"
+            class="
+              text-black
+              cursor-pointer
+            "
+            >mdi-code-braces</v-icon>
+            Website laten maken</router-link> </li>
           <li><a href="https://website-fabriek.online/wp-login.php" target="_blank">
             <v-icon
             size="30"

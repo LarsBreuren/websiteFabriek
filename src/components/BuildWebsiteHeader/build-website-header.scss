@@ -1,0 +1,32 @@
+.bannerContainer{
+  height: 250px;
+  filter: grayscale(100%);
+}
+
+.bannerTitle{
+  @apply absolute;
+  @apply uppercase;
+  @apply text-white;
+  @apply text-4xl;
+  @apply z-10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.overlay{
+  background-color: rgba(0,0,0,0.5);
+}
+
+@screen sm{
+  .bannerContainer{
+    height: 350px;
+  }
+}
+@screen md{
+
+}
+@screen lg {
+  .bannerContainer{
+    height: 50vh;
+  }
+}
