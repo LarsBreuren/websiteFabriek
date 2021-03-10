@@ -1,6 +1,6 @@
 .bannerContainer{
   height: 250px;
-  // filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .bannerTitle{
@@ -10,25 +10,6 @@
 }
 .overlay{
   background-color: rgba(0,0,0,0.5);
-}
-
-.bannerText{
-  position: relative;
-  top: -5em;
-  @apply z-30;
-  div{
-    @apply p-16;
-  }
-}
-
-.bannerImg{
-  @apply relative;
-  img{
-    @apply z-50;
-    @apply absolute;
-    top: -15em;
-    left: 7em;
-  }
 }
 
 @screen sm{
