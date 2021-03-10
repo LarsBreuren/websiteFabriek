@@ -5,7 +5,6 @@
   @apply p-16;
   @apply text-white;
   @apply bg-main;
-  @apply text-right;
   @apply my-8;
   position: relative;
   border-radius: 80px;
@@ -34,6 +33,12 @@
   }
 }
 
+.bubble1, .bubble2, .bubble3{
+  @apply text-right;
+}
+.bubble4, .bubble5, .bubble6{
+  @apply text-left;
+}
 .bubble1, .bubble3{
   @apply relative;
   left: 30px;
