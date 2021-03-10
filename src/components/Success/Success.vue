@@ -25,7 +25,7 @@
             quibusdam alias possimus aliquid? Cupiditate labore ipsam possimus
             aperiam inventore voluptates blanditiis ratione voluptatum?
           </p>
-          <router-link to="/">
+          <router-link to="/website-maken">
             <div class="ctaButton py-8 mb-16">
               Zo'n website wil ik!
             </div>

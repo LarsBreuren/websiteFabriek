@@ -11,6 +11,8 @@
         </div>
       </div>
       <FullWidthImage v-bind:image-link="imagelink1"  text="Een website is ongewoon handig" :overlay="true" :blackWhite="false"/>
+      <OurWork></OurWork>
+      <Proces></Proces>
     </div>
   </div>
 </template>
@@ -23,5 +25,7 @@
       top: -5em;
     }
   }
+
+
 </style>
 <script src="@/views/WebsiteMaken/WebsiteMaken.ts"></script>

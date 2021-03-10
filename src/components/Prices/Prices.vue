@@ -70,7 +70,7 @@
             <p class="font-semibold">25,- Per maand</p>
             <p class="text-base">Inclusief hosting + domeinnaam</p>
             <p class="text-base">Prijzen ex BTW</p>
-            <router-link to="/">
+            <router-link to="/website-maken">
               <div class="ctaButton mt-8 py-8 px-32">Bestel</div>
             </router-link>
         </div>
@@ -144,7 +144,7 @@
           <p class="font-semibold">35,- Per maand</p>
           <p class="text-base">Inclusief hosting + domeinnaam</p>
           <p class="text-base">Prijzen ex BTW</p>
-          <router-link to="/">
+          <router-link to="/website-maken">
             <div class="ctaButton mt-8 py-8 px-32">Bestel</div>
           </router-link>
       </div>

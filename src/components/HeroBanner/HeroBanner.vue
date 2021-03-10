@@ -21,7 +21,7 @@
             {{ getPostAcfValue(post, "subtitle") }}
           </p>
         </div>
-        <router-link to="/">
+        <router-link to="/website-maken">
           <div class="ctaButton mt-16">
             {{ getPostAcfValue(post, "button_text") }}
           </div>
