@@ -1,27 +1,12 @@
-.bannerContainer{
-  height: 250px;
-  filter: grayscale(100%);
+.quote{
+  font-family: 'Alfa Slab One', cursive;
 }
-
-.bannerTitle{
-  @apply uppercase;
-  @apply text-white;
-  @apply text-4xl;
-}
-.overlay{
-  background-color: rgba(0,0,0,0.5);
-}
-
 @screen sm{
-  .bannerContainer{
-    height: 350px;
-  }
+
 }
 @screen md{
 
 }
 @screen lg {
-  .bannerContainer{
-    height: 50vh;
-  }
+
 }

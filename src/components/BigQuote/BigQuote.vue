@@ -1,7 +1,6 @@
 <template>
   <div class="">
-    <p class="text-6xl text-main font-bold"><span v-if="quotes">"</span>{{ titleText }}<span v-if="quotes">"</span></p>
-
+    <p class="text-6xl text-main font-bold quote"><span v-if="quotes">"</span>{{ titleText }}<span v-if="quotes">"</span></p>
   </div>
 </template>
 
