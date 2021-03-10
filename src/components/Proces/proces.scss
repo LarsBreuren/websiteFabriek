@@ -42,6 +42,13 @@
   @apply relative;
   right: 30px;
 }
+.bubble1, .bubble3, .bubble4, .bubble6{
+  background-color: #3DB0D4;
+}
+.bubble1 .icon, .bubble3 .icon, .bubble4 .icon, .bubble6 .icon{
+  color: #3DB0D4;
+}
+
 
 .logo{
   width: 200px;
@@ -59,7 +66,7 @@
   outline: 1px solid transparent;
 }
 .bubble1::after {
-  border-bottom: 15px solid #7251EB;
+  border-bottom: 15px solid #3DB0D4;
   bottom: 10px;
   right: 0;
   -webkit-transform-style: preserve-3d;
@@ -88,7 +95,7 @@
 }
 
 .bubble3::after {
-  border-bottom: 15px solid #7251EB;
+  border-bottom: 15px solid #3DB0D4;
   top: 15px;
   right: 0;
   -webkit-transform-style: preserve-3d;
@@ -102,7 +109,7 @@
 }
 
 .bubble4::after{
-    border-bottom: 15px solid #7251EB;
+    border-bottom: 15px solid #3DB0D4;
     bottom: 10px;
     left: 0;
     -webkit-transform: rotateZ(-15deg);
@@ -130,7 +137,7 @@
 }
 
 .bubble6::after{
-    border-bottom: 15px solid #7251EB;
+    border-bottom: 15px solid #3DB0D4;
     top: 10px;
     left: 0;
     -webkit-transform: rotateZ(65deg);
