@@ -11,10 +11,6 @@
 .overlay{
   background-color: rgba(0,0,0,0.5);
 }
-.bannerContent{
-  top: -5em;
-  position: relative;
-}
 
 .bannerText{
   position: relative;
@@ -26,11 +22,12 @@
 
 .bannerImg{
   @apply relative;
+  @apply hidden;
   img{
     @apply z-50;
     @apply absolute;
-    top: -15em;
-    left: 7em;
+    @apply w-4/5;
+    bottom: 75px;
   }
 }
 
@@ -38,12 +35,29 @@
   .bannerContainer{
     height: 350px;
   }
+  .bannerContent{
+    top: -5em;
+    position: relative;
+  }
 }
 @screen md{
+  .bannerImg{
+  @apply block;
+}
 
 }
 @screen lg {
   .bannerContainer{
     height: 50vh;
   }
+@screen xl {
+  .bannerImg{
+    img{
+      @apply w-full;
+      bottom: 75px;
+      left: 75px;
+      padding-right: 15px;
+    }
+  }
+}
 }

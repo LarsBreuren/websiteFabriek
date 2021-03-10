@@ -2,8 +2,8 @@
   <div>
   <div class="flex items-center containerFull relative w-full bannerContainer z-10">
     <img class="absolute h-full w-full object-cover z-0" src="../../assets/images/features/coding.jpeg" alt="Banner background image">
-    <div class="container text-left relative z-20">
-      <div class="w-1/2">    
+    <div class="container md:text-left text-center; relative z-20">
+      <div class="md:w-1/2 w-full">    
         <h1 class="bannerTitle ">Website laten maken</h1>
       </div>
     </div>
@@ -13,7 +13,7 @@
   </div>
   <div class="bannerContent text-left bg-offwhite-600">
     <div class="container bannerText bg-offwhite-600 flex">
-    <div class="w-3/5">
+    <div class="w-full md:w-3/5">
       <p class="font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illo eius expedita error
          reprehenderit, consectetur quidem sunt architecto atque magni nisi enim?
           Repellat impedit odio fuga eligendi porro repudiandae voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis, rerum sapiente molestiae reprehenderit architecto similique quo recusandae non accusamus!</p>
