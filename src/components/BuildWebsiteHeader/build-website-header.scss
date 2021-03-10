@@ -11,13 +11,16 @@
 .overlay{
   background-color: rgba(0,0,0,0.5);
 }
+.bannerContent{
+  top: -5em;
+  position: relative;
+}
 
 .bannerText{
   position: relative;
-  top: -5em;
   @apply z-30;
   div{
-    @apply p-16;
+    @apply p-32;
   }
 }
 

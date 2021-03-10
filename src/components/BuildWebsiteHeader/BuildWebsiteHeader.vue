@@ -11,12 +11,12 @@
     class="overlay absolute top-0 bottom-0 right-0 left-0 object-cover w-full h-full"
   ></div>
   </div>
-  <div class="bannerText  text-left bg-offwhite-600">
+  <div class="bannerContent text-left bg-offwhite-600">
     <div class="container bannerText bg-offwhite-600 flex">
     <div class="w-3/5">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illo eius expedita error
+      <p class="font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illo eius expedita error
          reprehenderit, consectetur quidem sunt architecto atque magni nisi enim?
-          Repellat impedit odio fuga eligendi porro repudiandae voluptatibus!</p>
+          Repellat impedit odio fuga eligendi porro repudiandae voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis, rerum sapiente molestiae reprehenderit architecto similique quo recusandae non accusamus!</p>
     </div>
     <div class="w-2/5 relative bannerImg">
       <img src="../../assets/images/benb-desktop.png" alt="Banner background image">
