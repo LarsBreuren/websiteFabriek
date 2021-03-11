@@ -49,6 +49,7 @@
     @apply my-8;
     @apply ml-auto;
     @apply justify-between;
+    height: 115px;
     position: relative;
     border-radius: 80px;
     transition: 0.4s cubic-bezier(.02,.87,.73,1.26);
@@ -268,15 +269,19 @@
     }
     .bubble4, .bubble5, .bubble6{
       @apply text-left;
-    }
-  .bubble{
-    .bubbleText{
-      @apply px-16;
-    }
+    }      
+    .bubbleLoop{
+        @apply w-full;
+        .bubble{
+          .bubbleText{
+            @apply px-16;
+          }
+      
+          &:hover{
+            transform: scale(1.2);
+          }
+      }
 
-    &:hover{
-      transform: scale(1.2);
-    }
   }
 }
 }

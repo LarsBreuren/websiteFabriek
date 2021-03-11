@@ -4,6 +4,7 @@ import BigQuote from "@/components/BigQuote/BigQuote.vue";
 import FullWidthImage from "@/components/FullWidthImage/FullWidthImage.vue";
 import OurWork from "@/components/OurWork/OurWork.vue";
 import Proces from "@/components/Proces/Proces.vue";
+import Prices from "@/components/Prices/Prices.vue";
 
 @Component({
   components: {
@@ -12,6 +13,7 @@ import Proces from "@/components/Proces/Proces.vue";
     FullWidthImage,
     OurWork,
     Proces,
+    Prices,
   }
 })
 export default class WebsiteMaken extends Vue {

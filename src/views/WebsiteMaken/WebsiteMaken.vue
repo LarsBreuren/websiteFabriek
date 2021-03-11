@@ -11,8 +11,9 @@
         </div>
       </div>
       <FullWidthImage v-bind:image-link="imagelink1"  text="Een website is ongewoon handig" :overlay="true" :blackWhite="false"/>
+      <Proces class="mt-64"></Proces>
+      <prices></prices>
       <OurWork></OurWork>
-      <Proces></Proces>
     </div>
   </div>
 </template>
