@@ -11,28 +11,18 @@ export default class Headless extends Vue {
     icon: "notebook-edit-outline", show: false },
     { number: "3", title: "Aanpassen", text: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
     icon: "notebook-edit-outline", show: false },
-  ];
-  protected steps2 = [
-    { number: "4", title: "Vormgevingsgesprek", text: "Lorem ipsum dolor sit amet. Lorem, ipsum dolor.",
+    { number: "4", title: "Voorstel", text: "Lorem ipsum dolor sit amet. Lorem, ipsum dolor.",
     icon: "notebook-edit-outline", show: false },
-    { number: "5", title: "1e opzet", text: "Lorem ipsum dolor sit amet. Lorem, ipsum dolor.",
+    { number: "5", title: "Feedbackgesprek", text: "Lorem ipsum dolor sit amet. Lorem, ipsum dolor.",
     icon: "notebook-edit-outline", show: false },
-    { number: "6", title: "Aanpassen", text: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+    { number: "6", title: "Live!", text: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
     icon: "notebook-edit-outline", show: false },
   ];
 
-  protected initLoad(){
+  protected loadSteps(){
     this.steps.forEach((step, idx) => {
       this.delayLoad(step, idx)
     })
-    this.initLoad2();
-  }
-
-  protected initLoad2(){
-    // this.steps2.forEach((step, idx) => {
-    //   this.delayLoad(step, idx)
-    // })
-    console.log('done!')
   }
 
   protected delayLoad(step: any, idx: any){
