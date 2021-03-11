@@ -22,7 +22,7 @@
   @apply flex-wrap;
   @apply justify-center;
   @apply my-32;
-  min-height: 330px;
+  min-height: 400px;
 
     .bubble4, .bubble5, .bubble6{
       flex-direction: row-reverse;
@@ -273,6 +273,8 @@
     .bubbleLoop{
         @apply w-full;
         .bubble{
+          @apply justify-between;
+          @apply px-32;
           .bubbleText{
             @apply px-16;
           }

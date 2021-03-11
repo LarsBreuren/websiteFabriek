@@ -16,7 +16,7 @@
 }
 
 .imac{
-  width: 350px;
+  width: 300px;
   max-width: 95vw;
 }
 .pca-hold .pca-main {
@@ -190,7 +190,9 @@ body {
 }
 
 @screen sm{
-
+.imac{
+  width: 300px;
+}
 }
 @screen md{
 

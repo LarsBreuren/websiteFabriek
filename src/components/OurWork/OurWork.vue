@@ -1,10 +1,10 @@
 <template>
-  <div class="container my-32 md:my-128">
+  <div class="container my-32 md:my-128 overflow-hidden">
     <div class="flex flex-wrap justify-around">
       <div class="w-full md:text-left">
         <h2 class="text-4xl mb-16">Onze recente webdesigns.</h2>
       </div>
-      <div v-for="item in projects" :key="item.name" class="pca-hold lg:w-2/5 p-16 relative imac">
+      <div v-for="item in projects" :key="item.name" class="pca-hold lg:w-2/5 sm:p-16 relative imac">
         <div class="pca-main">
           <img
             :src="getImgUrl(item)"
