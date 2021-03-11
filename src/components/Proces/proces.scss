@@ -19,34 +19,46 @@
   @apply w-full;
   @apply mx-auto;
   @apply flex;
+  @apply flex-wrap;
   @apply justify-center;
+  @apply my-32;
   min-height: 330px;
 
+    .bubble4, .bubble5, .bubble6{
+      flex-direction: row-reverse;
+    }
   
   .bubbleGroup{
-    @apply w-1/3;
+    @apply w-full;
     @apply flex; 
     @apply flex-wrap;
     @apply self-start;
+    @apply justify-center;
   }
-
+  .bubbleLoop{
+    width: 90%;
+  }
   .bubble{
     @apply flex;
     @apply items-center;
     @apply w-full;
     @apply p-16;
     @apply text-white;
+    @apply text-center;
     @apply bg-main;
     @apply my-8;
     @apply ml-auto;
+    @apply justify-between;
     position: relative;
     border-radius: 80px;
     transition: 0.4s cubic-bezier(.02,.87,.73,1.26);
-    &:hover{
-      transform: scale(1.2);
-    }
     h3{
       @apply font-bold;
+    }
+
+    .bubbleText{
+      @apply px-8;
+      @apply w-1/2;
     }
 
     .procesStep{
@@ -64,147 +76,213 @@
     .icon{
       @apply text-main;
       @apply bg-white;
-      @apply p-16;
+      @apply p-8;
       border-radius: 100%;
     }
-    
   }
-  .bubble1, .bubble2, .bubble3{
-    @apply text-right;
-  }
-  .bubble4, .bubble5, .bubble6{
-    @apply text-left;
-  }
-  .bubble1, .bubble3{
-    @apply relative;
-    left: 30px;
-  }
-  .bubble4, .bubble6{
-    @apply relative;
-    right: 30px;
-  }
-  .bubble1, .bubble3, .bubble4, .bubble6{
+  .bubbleLoop:nth-child(odd) .bubble{
     background-color: #3DB0D4;
   }
-  .bubble1 .icon, .bubble3 .icon, .bubble4 .icon, .bubble6 .icon{
+  .bubbleLoop:nth-child(odd) .bubble .icon{
     color: #3DB0D4;
   }
   
 }
+.logoContainer{
+  order: -1;
+  @apply mb-32;
 
-
-
-.logo{
-  width: 200px;
-  @apply mx-8;
-  @apply self-center;
+  .logo{
+    width: 200px;
+    @apply mx-8;
+    @apply self-center;
+  }
 }
 
-.bubble::after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-left: 12px solid transparent;
-  border-right: 11px solid transparent;
-  -webkit-border-radius: 3%;
-  border-radius: 3%;
-  outline: 1px solid transparent;
-}
-.bubble1::after {
-  border-bottom: 15px solid #3DB0D4;
-  bottom: 10px;
-  right: 0;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: rotateZ(15deg);
-  -moz-transform: rotate(15deg);
-  -o-transform: rotate(15deg);
-  transform: rotate(15deg);
-}
-
-.bubble2::after {
-  border-bottom: 15px solid #7251EB;
-  top: 50%;
-  right: -15px;
-  margin-top: -7px;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.bubble3::after {
-  border-bottom: 15px solid #3DB0D4;
-  top: 15px;
-  right: 0;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: rotateZ(-65deg);
-  -moz-transform: rotate(-65deg);
-  -o-transform: rotateZ(-65deg);
-  transform: rotateZ(-65deg);
-}
-
-.bubble4::after{
-    border-bottom: 15px solid #3DB0D4;
-    bottom: 10px;
-    left: 0;
-    -webkit-transform: rotateZ(-15deg);
-    -moz-transform: rotateZ(-15deg);
-    -o-transform: rotateZ(-15deg);
-    transform: rotateZ(-15deg);
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-.bubble5::after {
-  border-bottom: 15px solid #7251EB;
-  top: 50%;
-  left: -15px;
-  margin-top: -6px;
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.bubble6::after{
-    border-bottom: 15px solid #3DB0D4;
-    top: 10px;
-    left: 0;
-    -webkit-transform: rotateZ(65deg);
-    -moz-transform: rotateZ(65deg);
-    -o-transform: rotateZ(65deg);
-    transform: rotateZ(65deg);
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
 
 
 @screen sm{
+  .bubbleContainer{
 
+    .bubbleLoop{
+      @apply w-3/5;
+    }
+  }
 }
 @screen md{
+  .logo{
+    width: 150px;
+    @apply block;
+  }
+  .bubbleContainer{
+    flex-wrap: unset;
 
+    .bubble4, .bubble5, .bubble6{
+      flex-direction: unset;
+    }
+
+    .logoContainer{
+      order: unset;
+      @apply mb-0;
+    }    
+    .bubbleGroup{
+      @apply w-1/3;
+
+      .bubble1, .bubble3{
+        @apply relative;
+        left: 30px;
+      }
+      .bubble4, .bubble6{
+        @apply relative;
+        right: 30px;
+      }
+      .bubbleLoop{
+        width: unset;
+      }
+      .bubbleLoop{
+    .bubble{
+      @apply justify-center;
+      @apply bg-main;
+      .bubbleText{
+        width: unset;
+      }
+  
+      .icon{
+        @apply block;
+        @apply p-16;
+        @apply text-main;
+      }
+    }
+    .bubble1, .bubble3, .bubble4, .bubble6{
+      background-color: #3DB0D4;
+    }
+    .bubble1 .icon, .bubble3 .icon, .bubble4 .icon, .bubble6 .icon{
+      color: #3DB0D4;
+    }
+  }
+}
+  .bubble::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 12px solid transparent;
+    border-right: 11px solid transparent;
+    -webkit-border-radius: 3%;
+    border-radius: 3%;
+    outline: 1px solid transparent;
+  }
+  .bubble1::after {
+    border-bottom: 15px solid #3DB0D4;
+    bottom: 10px;
+    right: 0;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateZ(15deg);
+    -moz-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  
+  .bubble2::after {
+    border-bottom: 15px solid #7251EB;
+    top: 50%;
+    right: -15px;
+    margin-top: -7px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  
+  .bubble3::after {
+    border-bottom: 15px solid #3DB0D4;
+    top: 15px;
+    right: 0;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateZ(-65deg);
+    -moz-transform: rotate(-65deg);
+    -o-transform: rotateZ(-65deg);
+    transform: rotateZ(-65deg);
+  }
+  
+  .bubble4::after{
+      border-bottom: 15px solid #3DB0D4;
+      bottom: 10px;
+      left: 0;
+      -webkit-transform: rotateZ(-15deg);
+      -moz-transform: rotateZ(-15deg);
+      -o-transform: rotateZ(-15deg);
+      transform: rotateZ(-15deg);
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -o-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+  }
+  .bubble5::after {
+    border-bottom: 15px solid #7251EB;
+    top: 50%;
+    left: -15px;
+    margin-top: -6px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .bubble6::after{
+      border-bottom: 15px solid #3DB0D4;
+      top: 10px;
+      left: 0;
+      -webkit-transform: rotateZ(65deg);
+      -moz-transform: rotateZ(65deg);
+      -o-transform: rotateZ(65deg);
+      transform: rotateZ(65deg);
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -o-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+  }
+}
 }
 @screen lg {
+  .logo{
+    width: 200px;
+  }
+  .bubbleContainer{
+  .bubbleGroup{
+    .bubble1, .bubble2, .bubble3{
+      @apply text-right;
+    }
+    .bubble4, .bubble5, .bubble6{
+      @apply text-left;
+    }
+  .bubble{
+    .bubbleText{
+      @apply px-16;
+    }
+
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+}
+}
+
+}
 
 @screen xl {
 
-}
 }

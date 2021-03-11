@@ -3,17 +3,17 @@
     <h2 class="text-4xl mb-32">Het proces.</h2>
     <div class="bubbleContainer">
       <div class="bubbleGroup">
-        <div v-for="step in steps" :key="step.id">
+        <div v-for="step in steps" :key="step.id" class="bubbleLoop">
           <transition name="bounce">
           <div v-if="step.show && step.number <= 3 " :class="'bubble' + ( step.number) + ' bubble'">
-            <div class="w-1/5">
+            <div>
               <p class="procesStep">{{ step.number }}</p>
             </div>
-            <div class="w-3/5 px-16 ">
+            <div class=" px-8 lg:px-16 ">
               <h3>{{ step.title }}</h3>
               <p>{{ step.text }}</p>
             </div>
-            <div class="w-1/5">
+            <div>
               <v-icon
                 size="30"
                 class="
@@ -28,16 +28,16 @@
         </div>
         </div>
 
-      <div class="px-16 self-center" v-view.once="loadSteps">
+      <div class="logoContainer px-16 self-center " v-view.once="loadSteps">
         <div class="">
           <img class="logo " src="../../assets/images/logo-small.svg" />
         </div>
       </div>
       <div class="bubbleGroup">
-        <div v-for="step in steps" :key="step.id">
+        <div v-for="step in steps" :key="step.id" class="bubbleLoop">
           <transition name="bounce">
           <div v-if="step.show && step.number > 3" :class="'bubble' + ( step.number) + ' bubble'">
-            <div class="w-1/5">
+            <div>
               <v-icon
                 size="30"
                 class="
@@ -46,11 +46,11 @@
                 >mdi-{{ step.icon }}</v-icon
               >
             </div>
-            <div class="w-3/5 px-16 ">
+            <div class="bubbleText">
               <h3>{{ step.title }}</h3>
               <p>{{ step.text }}</p>
             </div>
-            <div class="w-1/5">
+            <div>
               <p class="procesStep">{{ step.number }}</p>
             </div>
           </div>

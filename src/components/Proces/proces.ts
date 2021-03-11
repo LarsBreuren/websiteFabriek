@@ -23,7 +23,6 @@ export default class Headless extends Vue {
   ];
 
   protected loadSteps(){
-    console.log('hi there scroller!');
     this.steps.forEach((step, idx) => {
       this.delayLoad(step, idx)
     })
