@@ -2,7 +2,9 @@
   <div class="container">
     <h2 class="text-4xl mb-32">Het proces.</h2>
     <p @click="loadSteps">Click</p>
-
+    <div v-view.once="loadSteps">
+      Content
+  </div>
     <div class="bubbleContainer">
       <div class="bubbleGroup">
         <div v-for="step in steps" :key="step.id">

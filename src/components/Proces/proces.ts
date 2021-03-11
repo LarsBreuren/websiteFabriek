@@ -1,6 +1,6 @@
-import PostInterface from "@/interfaces/post";
 import { Component, Vue } from "vue-property-decorator";
-import getPostByPostName from "../support/getPostByPostName";
+import checkView from 'vue-check-view'
+Vue.use(checkView)
 
 @Component({})
 export default class Headless extends Vue {
@@ -22,6 +22,7 @@ export default class Headless extends Vue {
   ];
 
   protected loadSteps(){
+    console.log('hi there scroller!');
     this.steps.forEach((step, idx) => {
       this.delayLoad(step, idx)
     })
