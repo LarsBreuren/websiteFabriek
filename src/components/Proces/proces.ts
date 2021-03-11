@@ -1,5 +1,6 @@
 import { Component, Vue } from "vue-property-decorator";
-import checkView from 'vue-check-view'
+import checkView from 'vue-check-view';
+
 Vue.use(checkView)
 
 @Component({})
