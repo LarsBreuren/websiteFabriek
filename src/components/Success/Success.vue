@@ -15,15 +15,12 @@
           <h2 class="font-bold text-main text-4xl">Online sterk</h2>
           <b class="subtitle">Dat is wat waard</b>
           <p class="my-16">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            numquam temporibus molestias accusamus, saepe, dolorem, assumenda
-            reprehenderit officiis hic sed omnis id qui voluptate dolores
-            provident?
+            je website is je online visitekaartje. Het is belangrijk een goede eerste indruk te maken en dus te zorgen voor een nette goed werkende website.
+            Een goede website kan ervoor zorgen dat je meer en betere klanten binnenhaalt en dat je jouw werk goed kan presenteren. 
           </p>
-          <p class="my-16">
-            Impedit, deserunt rem repudiandae aliquam est dolor amet eius fugiat
-            quibusdam alias possimus aliquid? Cupiditate labore ipsam possimus
-            aperiam inventore voluptates blanditiis ratione voluptatum?
+            <p class="my-16">
+            Sinds dat ik ben begonnen met websites bouwen heb ik gezien hoeveel impact een goede of slechte website kan hebben voor je bedrijf. 
+            De kennis die ik afgelopen jaren heb opgedaan als developer zet ik graag voor jou in om een geweldige website te maken. Neem gerust contact op.            
           </p>
           <router-link to="/website-maken">
             <div class="ctaButton py-8 mb-16">

@@ -30,7 +30,7 @@
 
       <div class="logoContainer px-16 self-center " v-view.once="loadSteps">
         <div class="">
-          <img class="logo " src="../../assets/images/logo-small.svg" />
+          <img class="logo " src="../../assets/images/Logo-small.svg" />
         </div>
       </div>
       <div class="bubbleGroup">
