@@ -19,7 +19,7 @@
           Repellat impedit odio fuga eligendi porro repudiandae voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis, rerum sapiente molestiae reprehenderit architecto similique quo recusandae non accusamus!</p>
     </div>
     <div class="w-2/5 relative bannerImg">
-      <img src="../../assets/images/benb-desktop.png" alt="Banner background image">
+      <img src="../../assets/images/features/benb-desktop.png" alt="Banner background image">
     </div>
   </div>
 </div>
